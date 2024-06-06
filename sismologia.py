@@ -103,7 +103,7 @@ def muestra_salida(res_a, res_b, res_c, res_d, res_e_16, res_e_17, res_e_18, res
 def grafica(res_e_16, res_e_17, res_e_18, res_e_19, res_e_20, res_e_21):
     x = [16,17,18,19,20,21]
     y = [res_e_16, res_e_17, res_e_18, res_e_19, res_e_20, res_e_21] 
-    plt.bar(x, y)
+    plt.plot(x, y)
     plt.show()
 
 if __name__ == '__main__':
@@ -118,6 +118,5 @@ if __name__ == '__main__':
     res_e_19 = e_19_funcion(datos)
     res_e_20 = e_20_funcion(datos)
     res_e_21 = e_21_funcion(datos)
-    
     muestra_salida(res_a, res_b, res_c, res_d, res_e_16, res_e_17, res_e_18, res_e_19, res_e_20, res_e_21)
     grafica(res_e_16, res_e_17, res_e_18, res_e_19, res_e_20, res_e_21)
